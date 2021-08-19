@@ -1,50 +1,105 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css" />
-    <title>Hello, world!</title>
-  </head>
-  <body>
+    <title>TCC - Vinicius Vedovotto</title>
+</head>
+
+<body>
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <h1 id="title">Ciência de Dados Educacionais</h1>
-          </a>
+            <a class="navbar-brand" href="#">
+                <h1 id="title">Ciência de Dados: Uma aplicação em dados educacionais</h1>
+            </a>
         </div>
-      </nav>
+    </nav>
 
     <div class="container">
         <br>
+
         <div class="card text-center">
             <div class="card-header">
-              <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                  <a class="nav-link" href="/index">Introdução</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="/classificacao" aria-current="true">Problemas de Classificação</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/regressao" tabindex="-1">Problemas de Regressão</a>
-                </li>
-              </ul>
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index">Introdução</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/classificacao" aria-current="true">Problemas de
+                            Classificação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/regressao">Problemas de Regressão</a>
+                    </li>
+                </ul>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Something</h5>
 
-              
+            <div class="main">
+                <div class="card-body ">
+                    <h1 class="card-title"><strong>Portal de Ciência de Dados Educacionais</strong></h1>
+                    <p class="card-text"><strong>Vinícius Vedovotto</strong></p>
+                    <div class="border"></div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Problemas de Classificação</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>
+                                    O objetivo deste portal é fornecer uma aplicação web para ajudar os alunos de
+                                    Ciência de Dados a resolver problemas de classificação de dados.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <table class="table">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nome do modelo</th>
+                                        <th>Descrição</th>
+                                        <th>Avaliações</th>
+                                        <th>resultado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>linear_model.SGDClassifier()</td>
+                                        <td>bla bla bla</td>
+                                        <td>Avaliações</td>
+                                        <td>75% de acurácia</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>KNeighborsClassifier(n_neighbors=3)</td>
+                                        <td>vizinhos mais próximos</td>
+                                        <td>Avaliações</td>
+                                        <td>67% de acurácia</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <a href="https://colab.research.google.com/drive/1kg3b4OPUaJEeoXlSFt9d9LXQaEOjjnAm?usp=sharing"
+                            class="btn btn-outline-primary">Ver Notebook</a>
+                    </div>
+                </div>
             </div>
-          </div>            
         </div>
     </div>
 
@@ -52,17 +107,15 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
-
-
-
-
-    
