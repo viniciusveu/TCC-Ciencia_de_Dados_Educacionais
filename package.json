@@ -1,0 +1,14 @@
+{
+  "name": "tcc-portal",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "viniciusveu",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
