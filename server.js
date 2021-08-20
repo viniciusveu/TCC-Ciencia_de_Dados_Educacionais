@@ -17,6 +17,6 @@ app.get('/regressao', (req, res) => {
     res.render('regressao');
 });
 
-app.listen(80, () => {
+app.listen(3000, () => {
     console.log('app listen on port 3000');
 });
