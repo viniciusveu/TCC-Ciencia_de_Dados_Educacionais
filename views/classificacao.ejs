@@ -1,7 +1,6 @@
     <%- include('./partials/header') %>
 
     <div class="container">
-        <br>
 
         <div class="card text-center">
             <div class="card-header">
@@ -33,9 +32,15 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p>
-                                    O objetivo deste portal é fornecer uma aplicação web para ajudar os alunos de
-                                    Ciência de Dados a resolver problemas de classificação de dados.
+                                    O objetivo deste portal é fornecer uma aplicação web para mostrar os resultados de um TCC de forma mais simplificada e intuitiva. De modo que fique 
+                                    disponível online para todos que quiserem conhecer o trabalho.
                                 </p>
+                                <p>
+                                    A primeira etapa do trabalho foi a análise de dados, que consiste em um conjunto de dados que foram coletados em um experimento de...
+                                </p>
+
+                                <p></p> 
+                            
                             </div>
                         </div>
 
@@ -47,30 +52,48 @@
                                         <th>Nome do modelo</th>
                                         <th>Descrição</th>
                                         <th>Avaliações</th>
-                                        <th>resultado</th>
+                                        <th>Resultado</th>
+                                        <th>Modelo bobo</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>linear_model.SGDClassifier()</td>
-                                        <td>bla bla bla</td>
-                                        <td>Avaliações</td>
+                                        <td>Classificação Linear utilizando SGD.</td>
+                                        <td>Avaliação</td>
                                         <td>75% de acurácia</td>
+                                        <td>55% de acurácia</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
                                         <td>KNeighborsClassifier(n_neighbors=3)</td>
                                         <td>k vizinhos mais próximos</td>
-                                        <td>Avaliações</td>
+                                        <td>Avaliação</td>
                                         <td>67% de acurácia</td>
+                                        <td>53% de acurácia</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>tree.DecisionTreeClassifier()</td>
+                                        <td>Árvores de Decisão</td>
+                                        <td>Avaliação</td>
+                                        <td>62,3% de acurácia</td>
+                                        <td>53% de acurácia</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>neural_network.MLPClassifier()</td>
+                                        <td>Rede Neural</td>
+                                        <td>Avaliação</td>
+                                        <td>75,3% de acurácia</td>
+                                        <td>53% de acurácia</td>
                                     </tr>
                                 </tbody>
                             </table>
 
                         </div>
-                        <a href="https://colab.research.google.com/drive/1kg3b4OPUaJEeoXlSFt9d9LXQaEOjjnAm?usp=sharing"
-                            class="btn btn-outline-primary">Ver Notebook</a>
+                        <br>
                     </div>
                 </div>
             </div>

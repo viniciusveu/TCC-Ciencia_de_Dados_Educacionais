@@ -1,22 +1,17 @@
+//Creanting server
 const Express = require('express');
-
 const app = Express();
 
+//Config middlewares and views engine
 app.use(Express.static('public'));
 app.set('view engine', 'ejs');
 
-app.get('/index', (req, res) => {
-    res.render('index');
-});
+//Routes
+app.get('/index', (req, res) => res.render('index'));
+app.get('/classificacao', (req, res) => res.render('classificacao'));
+app.get('/regressao', (req, res) => res.render('regressao'));
 
-app.get('/classificacao', (req, res) => {
-    res.render('classificacao');
-});
-
-app.get('/regressao', (req, res) => {
-    res.render('regressao');
-});
-
+//Listen server
 app.listen(3000, () => {
-    console.log('app listen on port 3000');
+    console.log('App listen on port 3000');
 });
