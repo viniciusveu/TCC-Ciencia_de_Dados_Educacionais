@@ -1,33 +1,7 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-    <title>TCC - Vinicius Vedovotto</title>
-</head>
-
-<body>
-
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <h1 id="title">Ciência de Dados: Uma aplicação em dados educacionais</h1>
-            </a>
-        </div>
-    </nav>
+<%- include('./partials/header') %>
 
     <div class="container">
-        <br>
+
 
         <div class="card text-center">
             <div class="card-header">
@@ -123,28 +97,125 @@
                             Educacionais, utiliza-se de conhecimentos em ensino, aprendizagem e sistemas
                             educacionais.
                         </p>
+
+                        <div class="border"></div>
+
+                        <h2>Mineração de Dados</h2>
+                        <br>
+                        <p>
+                            Segundo Baker et al. (2011) o termo Mineração de Dados (do inglês, Data
+                            Mining) que também é conhecido como Descoberta de Conhecimento em Banco de
+                            Dados, se refere a uma disciplina que possui como objetivo descobrir novas
+                            informações através de processos de análise de grandes quantidades de dados e
+                            por “novas informações” entende-se como as relações identificadas que podem
+                            produzir novos conhecimentos e gerar novas descobertas. Um exemplo citado pelo
+                            autor é que ao minerar dados de alunos em um banco de dados pode-se verificar a
+                            relação entre uma abordagem pedagógica e o aprendizado do aluno e com isso
+                            poder melhorar a tomada de decisões do professor sobre qual abordagem utilizar.
+                        </p>
+
+                        <div class="border"></div>
+
+                        <h2>Mineração de Dados Educacionais</h2>
+                        <br>
+                        <p>
+                            A mineração de dados é a aplicação de técnicas implementadas por
+                            meio de algoritmos computacionais, capazes de receber como
+                            entrada um conjunto de fatos ocorridos no mundo real e devolver
+                            como saída um padrão de comportamento, o qual pode ser expresso,
+                            por exemplo, como uma regra de associação, uma função de
+                            mapeamento ou a modelagem de um perfil. (SILVA et al., 2016).
+                        </p>
+                        <p>
+                            Ainda para Baker et al. (2011), a Mineração de Dados (MD) pode e é utilizada
+                            em muitas áreas, como vendas, negócios, bioinformática. E com a recente expansão
+                            dos cursos de educação a distância (EAD) e de tecnologias para suporte
+                            educacional, muitos pesquisadores de Informática na Educação começaram a se
+                            interessar pela MD para poder investigar assuntos educacionais, assim surgindo a
+                            Mineração de Dados Educacionais (do inglês, Educational Data Mining, ou EDM).
+                            Muitos dos métodos de Mineração de Dados Educacionais são originários da
+                            Mineração de Dados, porém, pela necessidade de considerar uma hierarquia, muitas
+                            vezes esses métodos acabam sendo modificados e adaptados.
+                        </p>
+                        <p>
+                            Para Rodrigues et al. (2015) já não é mais discutida a importância das
+                            Tecnologias da Informação e Comunicação (TICs) na educação, mas o que se busca
+
+                            17
+
+                            são novas técnicas, métodos e procedimentos para aperfeiçoar e potencializar o
+                            ensino e a aprendizagem. Ramos et al. (2020) considera em seu artigo que as
+                            diversas áreas de utilização de alguma ferramenta da ciência de dados na educação
+                            beneficiará e apoiará estudantes, professores, dentre outros diretamente graças aos
+                            avanços na Mineração de Dados Educacionais.
+                            A Mineração de Dados Educacionais pode ser aplicada para resolver diversas
+                            tarefas, tais como
+                        <ul>
+                            <li>Criação de alertas</li>
+                            <li>Criação de modelos de aprendizagem</li>
+                            <li>Criação de perfis de professores</li>
+                            <li>Manutenção e melhoria dos cursos</li>
+                            <li>Geração de recomendações</li>
+                            <li>Previsão de notas e resultados de aprendizagem</li>
+                            <li>Criação de perfis de alunos</li>
+                        </ul>
+                        Entre muitas outras aplicações...
+                        </p>
+                        <p>
+                            Podendo algumas dessas tarefas se relacionarem entre si para serem
+                            aplicadas para determinados objetivos.
+                        </p>
+
+                        <div class="border"></div>
+
+                        <h2>Visualização da Informação</h2>
+                        <br>
+                        <p>
+                            Segundo Few (2009) a visão humana é, de longe, o sentido predominante e
+                            mais poderoso, cerca de 70% dos receptores sensoriais do corpo advém da visão. A
+                            visão é o portal sensorial humano mais intimamente ligado à cognição, assim
+                            possibilitando que se enxergue detalhes e padrões nos dados. “Imagens são
+                            processadas pelo sistema nervoso antes do que texto e sua visualização
+                            potencializa a memória ao fornecer um extenso conjunto de trabalho para análise e
+                            reflexão, tornando-se assim um facilitador externo da cognição” (SASIETA et al.,
+                            2012, p. 382).
+                        </p>
+                        <p>
+                            Visualização da Informação são os processos de produção de
+                            representações visuais de dados, que visam melhorar a capacidade
+                            de realizar uma tarefa através da codificação de informações muitas
+                            vezes altamente abstratas, em uma forma visual. A visualização
+                            pode ser estática ou dinâmica e interativa e, através de uma
+                            variedade de meios de comunicação (por exemplo, jornal, cartaz,
+                            website ou software) (MCINERNY et al., 2014, p. 149 - tradução de
+                            ALVES, 2015).
+                        </p>
+                        <img src="http://blog.marcoreis.net/wp-content/uploads/2013/05/data-visualization-tag-cloud.png"
+                            alt="Visualização de dados [image]">
+
+                        <div class="border"></div>
+
+                        <h2>Aprendizado de Máquina</h2>
+                        <br>
+                        <p>
+                            Aprendizado de Máquina é uma área de IA cujo
+                            objetivo é o desenvolvimento de técnicas
+                            computacionais sobre o aprendizado bem como a
+                            construção de sistemas capazes de adquirir
+                            conhecimento de forma automática
+                            Um sistema de aprendizado é um programa de
+                            computador que toma decisões baseado em
+                            experiências acumuladas através da solução
+                            bem sucedida de problemas anteriores. São os chamados algoritmos de Machine Learning (ML).
+                            Alguns exemplos são as Redes Neurais Artificiais (RNA), Vizinhos Proximos (KNN), Árvores de Decisão (Decision Trees), Naïve Bayes (Naive Bayes),
+                            Regressão Linear (Linear Regression), Regressão Logística (Logistic Regression)...
+                        </p>
+
                     </div>
-                    <a href="https://colab.research.google.com/drive/1kg3b4OPUaJEeoXlSFt9d9LXQaEOjjnAm?usp=sharing"
-                        class="btn btn-outline-primary">Ver Notebook</a>
+                    <br>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
-</body>
-
-</html>
+    <%- include('./partials/footer') %>
