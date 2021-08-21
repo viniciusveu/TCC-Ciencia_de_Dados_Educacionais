@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'ciencia-de-dados-edu'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a2326693c9ad4141b60c3fc878418a07 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e314d58f53db46b7bc16dfbf4c02094f }}
         package: .
