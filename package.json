@@ -1,7 +1,7 @@
 {
   "name": "tcc-portal",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "author": "viniciusveu",
   "license": "MIT",
   "scripts": {
