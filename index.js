@@ -9,8 +9,6 @@ app.use(Express.static('public'));
 app.use(cors);
 app.set('view engine', 'ejs');
 
-
-
 //Routes
 app.get('/index', (req, res) => res.render('index'));
 app.get('/classificacao', (req, res) => res.render('classificacao'));
