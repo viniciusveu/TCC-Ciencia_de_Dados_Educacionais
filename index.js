@@ -1,20 +1,24 @@
 const Express = require('express');
-const cors = require('cors');
+const path = require('path');
+var favicon = require('serve-favicon')
+require('dotenv').config();
 
 //Creanting server
 const app = Express();
 
 //Config middlewares and views engine
 app.use(Express.static('public'));
-app.use(cors);
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.set('view engine', 'ejs');
 
 //Routes
-app.get('/index', (req, res) => res.render('index'));
-app.get('/classificacao', (req, res) => res.render('classificacao'));
-app.get('/regressao', (req, res) => res.render('regressao'));
+app.get('/', (req, res) => res.status(301).redirect('index'));
+app.get('/index', (req, res) => res.status(200).render('index'));
+app.get('/classificacao', (req, res) => res.status(200).render('classificacao'));
+app.get('/regressao', (req, res) => res.status(200).render('regressao'));
 
 //Listen server
-app.listen(3000, () => {
-    console.log('App listen on port 3000');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`App listen on port ${port}`);
 });
